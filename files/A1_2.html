@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Image Editor</title>
+    <link rel="stylesheet" href="A1_2.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <table>
+            <tbody>
+                <tr height="33px">
+                    <td>Online Image Editor</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+	<div class = "choose-image">
+		<input type="text" id="img-name" name="img-name" value="Choose Image" onfocus="clearInputValue(this)">
+		<button class="browse-button"> Browse </button>
+		<br><br>
+	</div>
+    <div class="image-display">
+        <img id="uploaded-image" src="" alt="Uploaded Image" width="58%">
+    </div>
+    <div class="buttons">
+        <div class="filter-h">
+			<br>Filters
+		</div>
+        <div class="filter-controls">
+			<button class="filter-button" id="dec-brightness">-</button>
+			<p>Brightness</p>
+			<button class="filter-button" id="inc-brightness">+</button>
+			
+			<button class="filter-button" id="dec-contrast">-</button>
+			<p>Contrast</p>
+			<button class="filter-button" id="inc-contrast">+</button>
+			
+			<button class="filter-button" id="dec-saturation">-</button>
+			<p>Saturation</p>
+			<button class="filter-button" id="inc-saturation">+</button>
+			
+			<button class="filter-button" id="dec-vibrance">-</button>
+			<p>Vibrance</p>
+			<button class="filter-button" id="inc-vibrance">+</button>
+		</div>
+		<div class="buttons-section">
+			<button class="red-button" id="blur-btn">Blur</button>
+			<button class="red-button" id="crop-btn">Crop</button>
+			<button class="red-button" id="rotate-btn">Rotate</button>
+			<button class="red-button" id="scale-btn">Scale</button>
+		</div>
+		<div class="action-buttons">
+			<button class="rectangle-button purple" id="rmv">Remove Filters</button>
+			<button class="rectangle-button red" id="dl">Download Image</button>
+		</div>
+    </div>
+    <script src="A1_2.js"></script>
+</body>
+</html>

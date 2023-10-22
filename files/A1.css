@@ -1,0 +1,244 @@
+body {
+    background-color: #dde2e7;
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+/**********************************/
+
+table {
+    background-color: white;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.menu-item {
+    color: gray;
+    display: inline;
+	padding-left: 35px;
+    font-size: 14px;
+    font-weight: bold;
+	cursor:pointer;
+}
+
+.menu-item.first {
+    padding-left: 140px;
+}
+
+.menu-item.first img {
+    max-width: 25px;
+    height: auto;
+}
+
+.button-item {
+    text-align: right;
+	padding-right: 38px;
+	padding-bottom: 5px;
+}
+
+.twtbtn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 5px 18px;
+    border: none;
+    font-weight: bold;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+/**********************************/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 230px 420px 230px;
+    gap: 10px;
+    background-color: #dde2e7;
+    margin: 10px;
+	padding-left: 200px;
+}
+
+.grid-container > div {
+    background-color: white;
+}
+
+.item1 {
+    grid-row: span 17;
+    grid-column: 1;
+	position: relative;
+}
+
+.cover-photo img {
+    max-width: 100%;
+}
+
+.profile-grid {
+    position: absolute;
+    top: 34px;
+    left: 15px;
+}
+
+.profile-grid img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+	border: 1.5px solid white;
+}
+
+.upload-button {
+	position: absolute;
+	top: 60px;
+    left: 5px;
+	background-color: white;
+    color: #1da1f2;
+    padding: 1px 5px;
+    border: 1px solid #1da1f2;
+    font-weight: bold;
+	font-size: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.username {
+	position: absolute;
+	top: 19px;
+    left: 72px;
+	font-weight: bold;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.user-handle {
+	position: absolute;
+	top: 35px;
+    left: 72px;
+	color: gray;
+	font-size: 10px;
+}
+
+.profile-info th {
+    padding: 42px 5px 0px 4px;
+	font-size: 12.2px;
+	color: gray;
+	font-weight: bold;
+}
+
+.profile-info td {
+    padding: 6px 5px 0px 11px;
+	color: #60c2ff;
+	font-size: 12.2px;
+	font-weight: bold;
+}
+
+			/**********************************/
+
+.item2 {
+    grid-row: span 34;
+    grid-column: 2;
+	padding-top: 20px;
+}
+
+.user-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-div img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+	margin-left: 8px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+	margin-top: -29px;
+	position: relative;
+}
+
+.usern {
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.user-h {
+    color: gray;
+    font-size: 11px;
+	padding-top: 1px;
+	padding-left: 2px;
+}
+
+.tweet-content-container {
+    margin-top: 5px;
+	font-size: 12.5px;
+	position: absolute;
+	left: 1px;
+	top: 25px;
+	width: 320%;
+}
+
+.light-gray-line{
+    border: 0.5px solid #f0f0f0;
+	margin-top: 15px;
+}
+
+.light-gray-line.alt{
+	margin-top: 28px;
+}
+
+.light-gray-line.fin{
+	margin-top: 0px;
+}
+			/**********************************/
+
+@media (min-width: 500px) {
+	.item3 {
+		grid-row: span 17;
+		grid-column: 3;
+		position: relative;
+	}
+    
+@media (max-width: 499px) {
+	.item3{
+		visibility: hidden;
+	}	
+}
+
+/* .item3 { */
+    /* grid-row: span 17; */
+    /* grid-column: 3; */
+	/* position: relative; */
+/* } */
+
+h3 {
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.follow-btn {
+	position: absolute;
+	top: 68px;
+    left: 57px;
+	background-color: white;
+    color: #60c2ff;
+    padding: 3.3px 16px;
+    border: 1px solid #60c2ff;
+    font-weight: bold;
+	font-size: 11.5px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.follow-btn.two{
+	position: absolute;
+	top: 127px;
+}
+
+.light-gray-line.two{
+    margin: 1px 8px 5px 8px;
+}
